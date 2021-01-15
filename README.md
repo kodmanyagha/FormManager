@@ -3,7 +3,7 @@
 Create and update forms, share it and export answers to excel.
 
 ### Features
-- Create form.
+- ~~Create form.~~ (Form designer not finished yet, you must add forms to database)
 - Export answers to Excel.
 - Select date when exporting.
 - Send e-mail to admin when a form filled.
