@@ -29,14 +29,6 @@ class CreateUsersTable extends Migration {
 			$table->rememberToken();
 			$table->timestamps();
 		});
-
-		$save = new User();
-		$save->firstname = 'Admin';
-		$save->lastname = 'System';
-		$save->group = 'admin';
-		$save->email = 'admin@admin.com';
-		$save->password = Hash::make('123456');
-		$save->save();
 	}
 
 	/**

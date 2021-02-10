@@ -52,24 +52,6 @@ class CreateFormsTable extends Migration
             // foreign keys
             $table->foreign('user_id')->references('id')->on('users');
         });
-
-        $save                  = new Form();
-        $save->user_id         = 1;
-        $save->slug            = 'tercih-edilen-programlama-dilleri';
-        $save->title           = 'Tercih Edilen Programlama Dilleri';
-        $save->type            = 'normal';
-        $save->status          = 'active';
-        $save->passive_message = 'Bu form şu anda kullanılamaz.';
-        $save->save();
-
-        $save                  = new Form();
-        $save->user_id         = 1;
-        $save->slug            = 'yazilimci-anketi';
-        $save->title           = 'Yazılımcı Anketi';
-        $save->type            = 'normal';
-        $save->status          = 'active';
-        $save->passive_message = 'Bu form şu anda kullanılamaz.';
-        $save->save();
     }
 
     /**

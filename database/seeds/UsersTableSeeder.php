@@ -16,7 +16,8 @@ class UsersTableSeeder extends Seeder
     {
         $save            = new User();
         $save->firstname = 'Admin';
-        $save->lastname  = 'Admin';
+        $save->lastname  = 'System';
+        $save->group     = 'admin';
         $save->email     = 'admin@admin.com';
         $save->password  = Hash::make('123456');
         $save->save();
